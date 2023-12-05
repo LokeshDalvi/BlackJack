@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="./blackjack.css">
+    <link rel="shortcut icon" href="./images/blackjack_logo.png" type="image/x-icon">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/fc834ea180.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <main>
+        <div id="cont">
+            <img src="" alt="">
+            <h1>Black Jack</h1>
+            <div id="players">
+                <div id="player">
+                    <!-- <img src="./images/playerImage.webp" alt="Player"> -->
+                    <i class="fa-solid fa-user"></i>
+                    <h3 id="pCards">Player Cards: </h3>
+                    <h3 id="pTotal">Player Total: </h3>
+                    <div id="btn">
+                        <button id="draw" onclick="newCard()">
+                            DRAW 
+                        </button>
+                        <button id="stay" onclick="computerNewCard()">
+                            STAY
+                        </button>
+                    </div>
+                </div>
+                <div id="comp">
+                    <!-- <img src="./images/computerImage.jpg" alt="Computer"> -->
+                    <i class="fa-solid fa-robot"></i>
+                    <h3 id="cTotal">Computer Total: </h3>
+                </div>    
+            </div>
+            
+            <button id="startBtn" onclick="start()">Start Game</button>
+            <p id="result"> Please Click on Start game </i></p>
+        </div>
+    </main>
+
+    <script src="./blackjack.js"></script>
+</body>
+</html>
